@@ -7,6 +7,11 @@ import { Suspense } from 'react';
 import { RevenueChartSkeleton } from '@/app/ui/skeletons'; // WRAP THIS IN SUSPENSE NOW
 import { LatestInvoicesSkeleton, CardSkeleton } from '@/app/ui/skeletons'; // WRAP THESE IN SUSPENSE NOW
 import CardWrapper from '@/app/ui/dashboard/cards'; // CARDS TO SUSPENSE NOW
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Dashboard',
+};
 
 export default async function Page() {
   // const revenue = await fetchRevenue(); MOVED TO SUSPENSE
